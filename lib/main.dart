@@ -162,8 +162,8 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               UserAccountsDrawerHeader(
-                accountName: Text("Мистер Твистер"),
-                accountEmail: Text("home@dartflutter.ru"),
+                accountName: Text("Мустафина"),
+                accountEmail: Text("mustafa5122003@gmail.com"),
                 currentAccountPicture: CircleAvatar(
                   backgroundColor: Colors.white,
                   child: Text(
