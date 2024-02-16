@@ -32,14 +32,14 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
             ElevatedButton(
               child: Text("Yes"),
               onPressed: () {
-                Navigator.of(context).pop("Me too"); // Return value
+                Navigator.of(context).pop("Me too"); 
               },
             ),
             ElevatedButton(
               child: Text("No"),
               onPressed: () {
                 Navigator.of(context)
-                    .pop("money money money must be funny"); // Return value
+                    .pop("money money money must be funny"); 
               },
             ),
           ],
@@ -71,7 +71,7 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Center vertically
+            mainAxisAlignment: MainAxisAlignment.center, 
             children: [
               ElevatedButton(
                 onPressed: () {
@@ -79,11 +79,11 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                 },
                 child: Text("Dialog"),
               ),
-              SizedBox(height: 20), // Add some spacing
+              SizedBox(height: 20),
               Container(
                 width: 350,
-                // Adjust the height to ensure content fits without overflow
-                height: 220, // Increased height to accommodate buttons
+                
+                height: 220, 
                 padding: EdgeInsets.all(16.0),
                 child: Card(
                   shape: RoundedRectangleBorder(
@@ -93,10 +93,10 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                   elevation: 10,
                   child: Padding(
                     padding:
-                        const EdgeInsets.all(16.0), // Padding inside the card
+                        const EdgeInsets.all(16.0), 
                     child: Column(
                       mainAxisSize: MainAxisSize
-                          .min, // Use the space needed for the children only
+                          .min, 
                       children: <Widget>[
               
                         ListTile(
@@ -104,23 +104,22 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                           title: Text(
                             "Sonu Nigam",
                             style:
-                                TextStyle(fontSize: 24.0), // Reduced font size
+                                TextStyle(fontSize: 24.0), 
                           ),
                           subtitle: Text(
                             "Best of Sonu Nigam Music",
                             style:
-                                TextStyle(fontSize: 14.0), // Reduced font size
+                                TextStyle(fontSize: 14.0), 
                           ),
                         ),
-                        // Use a Flexible widget to prevent overflow
-                        Flexible(
+                        
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.white, // Background color
-                                  onPrimary: Colors.black, // Text color
+                                  primary: Colors.white, 
+                                  onPrimary: Colors.black, 
                                 ),
                                 onPressed: () {
                                   setState(() {
@@ -131,8 +130,8 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                               ),
                               ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.white, // Background color
-                                  onPrimary: Colors.black, // Text color
+                                  primary: Colors.white, 
+                                  onPrimary: Colors.black, 
                                 ),
                                 onPressed: () {
                                   setState(() {
@@ -179,7 +178,7 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                 leading: Icon(Icons.map),
                 title: Text('Map'),
                 onTap: () {
-                  // Navigation logic for Map
+                  
                   Navigator.pop(context);
                 },
               ),
@@ -187,7 +186,7 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                 leading: Icon(Icons.photo_album),
                 title: Text('Album'),
                 onTap: () {
-                  // Navigation logic for Album
+                 
                   Navigator.pop(context);
                 },
               ),
@@ -195,7 +194,7 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                 leading: Icon(Icons.phone),
                 title: Text('Phone'),
                 onTap: () {
-                  // Navigation logic for Phone
+                  
                   Navigator.pop(context);
                 },
               ),
@@ -203,7 +202,7 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                 leading: Icon(Icons.contacts),
                 title: Text('Contact'),
                 onTap: () {
-                  // Navigation logic for Contact
+                 
                   Navigator.pop(context);
                 },
               ),
@@ -211,7 +210,7 @@ class _MyAlertDialogDemoState extends State<MyAlertDialogDemo> {
                 leading: Icon(Icons.settings),
                 title: Text('Setting'),
                 onTap: () {
-                  // Navigation logic for Setting
+                  
                   Navigator.pop(context);
                 },
               ),
